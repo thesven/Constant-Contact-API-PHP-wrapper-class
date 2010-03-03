@@ -30,7 +30,7 @@ $result = $cc->getListOfPreviousSentEmails();
 
 *add user to mailing list
 $cc = new ConstantContact( 'your_api_key', 'login_name', 'password' );
-$result = $cc->addContactToMailingList("michael@mikesvendsen.net", "https://api.constantcontact.com/ws/customers/'login_name'/'the_list_number'");
+$result = $cc->addContactToMailingList("emailaddress@somedomain.net", "https://api.constantcontact.com/ws/customers/'login_name'/'the_list_number'");
 
 **
 replace:
@@ -38,3 +38,4 @@ replace:
 -login_name w/ your login name
 -password w/ your password
 -the_list_number w/ the number of the contact list that you would like to add a contact to
+-emailaddress@somedomain.net w/ the email address you would like to add to a contact list
